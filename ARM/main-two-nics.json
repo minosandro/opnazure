@@ -433,7 +433,7 @@
                       "value": "[parameters('publicIPId')]"
                     },
                     "enableIPForwarding": {
-                      "value": true
+                      "value": false
                     },
                     "nsgId": {
                       "value": "[parameters('nsgId')]"
@@ -530,7 +530,7 @@
                       "value": "[parameters('trustedSubnetId')]"
                     },
                     "enableIPForwarding": {
-                      "value": true
+                      "value": false
                     },
                     "nsgId": {
                       "value": "[parameters('nsgId')]"
