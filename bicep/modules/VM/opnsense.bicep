@@ -34,7 +34,7 @@ module untrustedNic '../vnet/nic.bicep' = {
     nicName: untrustedNicName
     subnetId: untrustedSubnetId
     publicIPId: publicIPId
-    enableIPForwarding: true
+    enableIPForwarding: false
     nsgId: nsgId
     loadBalancerBackendAddressPoolId: ExternalLoadBalancerBackendAddressPoolId
     loadBalancerInboundNatRules: ExternalloadBalancerInboundNatRulesId
@@ -47,7 +47,7 @@ module trustedNic '../vnet/nic.bicep' = if(multiNicSupport){
     Location: Location
     nicName: trustedNicName
     subnetId: trustedSubnetId
-    enableIPForwarding: true
+    enableIPForwarding: false
     nsgId: nsgId
     loadBalancerBackendAddressPoolId: InternalLoadBalancerBackendAddressPoolId
   }
