@@ -11,6 +11,7 @@ resource nic 'Microsoft.Network/networkInterfaces@2021-05-01' = {
   name: nicName
   location: Location
   properties: {
+    enableIPForwarding: enableIPForwarding
     networkSecurityGroup:{
       id: nsgId
     }
